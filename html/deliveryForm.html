@@ -1,0 +1,73 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik|Varela+Round" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+<h2> פרטי המזמין </h2>
+<form action='thankYou.html' method="post">
+	<table width="300px">
+	<tr>
+	<td><label> שם פרטי: </label></td>
+	<td><input type="text" name="userFirstName" required /></td>
+	</tr>
+	<tr>
+	<td><label> שם משפחה: </label></td>
+	<td><input type="text" name="userLastName"/></td>
+	</tr>
+	<tr>
+	<td><label> אימייל: </label></td>
+	<td><input type="email" name="userEmail" required /></td>
+	</tr>
+	<tr>
+	<td><label> טלפון: </label></td>
+	<td><input type="tel" name="userPhone" required /></td>
+	</tr>
+	</table>
+</form>
+<h2> פרטי המשלוח </h2>
+<form action='thankYou.html' method="post">
+	<table width="300px">
+		<tr>
+			<td><label> שם פרטי: </label></td>
+			<td><input type="text" name="receiverFirstName" required /></td>
+		</tr>
+		<tr>
+			<td><label> שם משפחה: </label></td>
+			<td><input type="text" name="receiverLastName"/></td>
+		</tr>
+		<tr>
+			<td><label> כתובת: </label></td>
+			<td><input type="text" name="receiverAddress" required /></td>
+		</tr>
+		<tr>
+			<td><label> עיר: </label></td>
+			<td><select name="City" required>
+			<option value="באר שבע">באר שבע 10 ש"ח</option>
+			<option value="עומר">עומר 25 ש"ח</option>
+			<option value="מיתר">מיתר 25 ש"ח</option>
+			<option value="רהט">רהט 35 ש"ח</option><td>
+			</select>
+		</tr>
+			<td><label> טלפון: </label></td>
+			<td><input type="tel" name="receiverPhone"/ required></td>
+		<tr>
+			<td><label> תאריך משלוח: </label></td>
+			<td><input type="date" name="deliveryDate"/ required></td>
+		</tr>
+		<tr>
+			<td><label> שעת משלוח: </label></td>
+			<td><input type="time" name="deliveryTime"/ required></td>
+		</tr>
+
+	</table>	
+			<input type="submit" value="בצע הזמנה">
+</form>
+</div>
+	<footer> 
+	להזמנות 08-6432279 כתובת אליעזר שמואלי 1 באר שבע
+	</footer>
+</body>
+</html>

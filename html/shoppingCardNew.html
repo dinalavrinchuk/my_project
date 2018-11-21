@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> תיאור המוצר</title>
+    <meta name="author" content=”dina lavrinchuk“/>
+    <link rel = "stylesheet" type = "text/css" href = "../css/NewShoppingCard.css"/>
+
+
+</head>
+<body>
+<div class="shopping-cart">
+    <!-- Title -->
+    <div class="title">
+        סל קניות
+    </div>
+
+    <!-- Товар #1 -->
+    <div class="item">
+        <div class="buttons">
+            <span class="delete-btn"> <img src="../img/iks.png" height="18" width="17"/> </span>
+            <span class="like-btn"><img src="../img/תמונה5.png" height="18" width="17"/></span>
+        </div>
+
+        <div class="image">
+            <img src="../img/2.jpg" height="60" width="80" alt="" />
+        </div>
+
+        <div class="description">
+            <span>סידור פרחים סיני</span> <br>
+            <span>בינוני</span>
+        </div>
+
+        <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+                +
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+               -
+            </button>
+        </div>
+
+        <div class="total-price"> 549 ש"ח</div>
+    </div>
+
+    <!-- Товар #1 -->
+    <div class="item">
+        <div class="buttons">
+            <span class="delete-btn"> <img src="..img/iks.png" height="18" width="17"/> </span>
+            <span class="like-btn"><img src="..img/תמונה5.png" height="18" width="17"/></span>
+        </div>
+
+        <div class="image">
+            <img src="../img/2.jpg" height="60" width="80" alt="" />
+        </div>
+
+        <div class="description">
+            <span>סידור פרחים סיני</span><br>
+            <span>בינוני</span>
+        </div>
+
+        <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+                +
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+              -
+            </button>
+        </div>
+
+        <div class="total-price"> 549 ש"ח</div>
+    </div>
+
+    <!-- Товар #1 -->
+    <div class="item">
+        <div class="buttons">
+            <span class="delete-btn"> <img src="../img/iks.png" height="18" width="17"/> </span>
+            <span class="like-btn"><img src="../img/תמונה5.png" height="18" width="17"/></span>
+        </div>
+
+        <div class="image">
+            <img src="../img/2.jpg" height="60" width="80" alt="" />
+        </div>
+
+        <div class="description">
+            <span>סידור פרחים סיני</span><br>
+            <span>בינוני</span>
+        </div>
+
+        <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+               +
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+               -
+            </button>
+        </div>
+
+        <div class="total-price"> 549 ש"ח</div>
+        <script>$('.like-btn').on('click', function() {
+            $(this).toggleClass('is-active');
+        });</script>
+        <script>
+            $('.minus-btn').on('click', function(e) {
+                e.preventDefault();
+                var $this = $(this);
+                var $input = $this.closest('div').find('input');
+                var value = parseInt($input.val());
+
+                if (value &gt; 1) {
+                    value = value - 1;
+                } else {
+                    value = 0;
+                }
+
+                $input.val(value);
+
+            });
+
+            $('.plus-btn').on('click', function(e) {
+                e.preventDefault();
+                var $this = $(this);
+                var $input = $this.closest('div').find('input');
+                var value = parseInt($input.val());
+
+                if (value &lt; 100) {
+                    value = value + 1;
+                } else {
+                    value =100;
+                }
+
+                $input.val(value);
+            });
+        </script>
+    </div>
+
+</div>
+</body>
+</html>

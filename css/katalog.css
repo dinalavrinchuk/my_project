@@ -1,0 +1,53 @@
+body {
+    direction: rtl;
+
+}
+{
+    margin:0; paddiing:0;
+}
+a{
+    color:#808080;
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    border:none;
+}
+.katalog{
+    width: 726px;margin: 30px auto;
+}
+    .product-main{
+        width: 242px ; float: left;
+
+    }
+        .product{
+           border-right: 1px dotted #FFB6C1;
+            padding: 0 20px;
+        }
+            .product h2{
+                text-alaing:center; font: bold 14px/1.3 tahoma; margin: center;
+            }
+            .product-img{
+                text-alaing:center;
+            }
+            .price{
+                font:21px/1.3; color: brown;
+            }
+                .price span{
+                    font-size: 15px; color: black;
+                }
+                .price img{
+                    float:left;
+                }
+.boy-dot{
+                   border-bottom: 1px dotted #FFB6C1; margin: 20px;
+                }
+.product-main:nth-child(3n) .product{
+    border-right: none;
+}
+.product-main:nth-child(3n) .boy-dot{
+   margin: 20px 0 20px 20px }
+
+.product-main:nth-child(3n+1) .boy-dot{
+    margin: 20px 20px 20px 0 }

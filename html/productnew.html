@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> תיאור המוצר</title>
+    <meta name="author" content=”dina lavrinchuk“/>
+    <link rel = "stylesheet" type = "text/css" href = "../css/productnew.css"/>
+
+
+</head>
+
+
+<body class = "card">
+    <div class = "top-section">
+    <img id="image-container" src="../img/7.jpg" alt="">
+    <div class = "nav">
+        <img onclick ="change_img(this)" src="../img/8.jpg" alt ="">
+        <img onclick ="change_img(this)" src="../img/2.jpg" alt ="">
+        <img onclick ="change_img(this)" src="../img/3.jpg" alt ="">
+    </div>
+
+    </div>
+    <div class = "product-info">
+        <div class = "name">  סידור פרחים יפה</div>
+        <div class = "dis">סידור פרחים מפרחים יפים</div>
+        <p><b>300 ש"ח </b></p>
+        <a class="btn" herf = "#"> הוסף לסל</a>
+        <div class = "product-reiting-box">
+            <a class = "ion-android-star b1"> </a>
+            <a class = "ion-android-star b2"> </a>
+            <a class = "ion-android-star b3"> </a>
+            <a class = "ion-android-star b4"> </a>
+            <a class = "ion-android-star b5"> </a>
+
+        </div>
+    </div>
+
+    <script type = "text/javascript">
+        var container = document.getElementById("image-container");
+        function change_img(image) {
+            container.src =image.src;
+        }
+    </script>
+
+</body>
+</html>
